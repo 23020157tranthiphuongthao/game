@@ -1,0 +1,68 @@
+# depslib dependency file v1.0
+1712602451 source:d:\baitaplon\game\main.cpp
+	<iostream>
+	<cstdlib>
+	<ctime>
+	<cmath>
+	<chrono>
+	"SDL_utils.h"
+	"Game.h"
+	"Gallery.h"
+	"constants.h"
+
+1712602244 source:d:\baitaplon\game\gallery.cpp
+	"Gallery.h"
+	"SDL_utils.h"
+	<SDL_image.h>
+	<SDL2/SDL_image.h>
+
+1712602302 d:\baitaplon\game\gallery.h
+	<vector>
+	<string>
+	<SDL.h>
+	<SDL2/SDL.h>
+
+1712602676 d:\baitaplon\game\sdl_utils.h
+	<iostream>
+	<SDL.h>
+	<SDL2/SDL.h>
+	"Game.h"
+	"constants.h"
+	"Gallery.h"
+
+1712602451 d:\baitaplon\game\game.h
+	"Snake.h"
+	"Position.h"
+
+1712602755 d:\baitaplon\game\snake.h
+	<queue>
+	<vector>
+	"Position.h"
+
+1712602511 d:\baitaplon\game\position.h
+	<stdexcept>
+
+1712679837 d:\baitaplon\game\constants.h
+	<SDL.h>
+	<SDL2/SDL.h>
+
+1712602367 source:d:\baitaplon\game\game.cpp
+	<vector>
+	<cassert>
+	<cstdlib>
+	<iostream>
+	"Game.h"
+
+1712602676 source:d:\baitaplon\game\sdl_utils.cpp
+	<iostream>
+	<SDL.h>
+	<SDL2/SDL.h>
+	"Game.h"
+	"constants.h"
+	"Gallery.h"
+
+1712602755 source:d:\baitaplon\game\snake.cpp
+	"Snake.h"
+	"Game.h"
+	<iostream>
+
