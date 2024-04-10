@@ -58,8 +58,8 @@ vector<Position> Snake::getPositions() const
 void Snake::growAtFront(Position newPosition)
 {
     // head of snake grow at new position
-    SnakeNode abc= SnakeNode(newPosition,head);
-    *head=abc;
+    head->next= new SnakeNode(newPosition);
+    head=head->next;
     game.setCellType(head->position,CELL_SNAKE);
     /* YOUR CODE HERE */
 }
@@ -128,6 +128,7 @@ void Snake::slideTo(Position newPosition)
 void Snake::eatCherry()
 {
 	/* YOUR CODE HERE */
+	if(head->position==CELL_CHERRY)
 	cherry=cherry+1;
 }
 

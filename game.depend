@@ -46,7 +46,7 @@
 	<SDL.h>
 	<SDL2/SDL.h>
 
-1712763821 source:d:\baitaplon\game\game.cpp
+1712765453 source:d:\baitaplon\game\game.cpp
 	<vector>
 	<cassert>
 	<cstdlib>
@@ -61,7 +61,7 @@
 	"constants.h"
 	"Gallery.h"
 
-1712763827 source:d:\baitaplon\game\snake.cpp
+1712765477 source:d:\baitaplon\game\snake.cpp
 	"Snake.h"
 	"Game.h"
 	<iostream>

@@ -57,24 +57,18 @@ void Game::snakeMoveTo(Position pos) {
 	//
 	//
 	// END CODE HERE
-	if(getCellType(pos)==CELL_OFF_BOARD)
+	CellType bien=getCellType(pos);
+	if(bien==CELL_OFF_BOARD||bien==CELL_SNAKE)
     {
         status=GAME_OVER;
         return;
     }
-    vector<Position>ps=getSnakePositions();
-   for (const auto& part : ps)
-   {
-       if(part==pos)
-       {
-           status=GAME_OVER;
-           return;
-       }
-   }
-    if(pos==getCherryPosition())
+
+    if(bien==CELL_CHERRY)
     {
         score=score+1;
         snake.eatCherry();
+        addCherry();
     }
     else
     {
