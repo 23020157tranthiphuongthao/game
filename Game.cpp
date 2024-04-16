@@ -5,6 +5,7 @@
 #include <cstdlib>
 #include <iostream>
 #include "Game.h"
+#include <ctime> // for time()
 
 using namespace std;
 
@@ -15,12 +16,12 @@ using namespace std;
 Game::Game(int _width, int _height)
     : width(_width), height(_height), // play screen
 	  squares(_height, vector<CellType>(_width, CELL_EMPTY)), // cell coordinates
-      snake(*this, Position(_width/2, _height/2)),  // init snake positin in middle of play screen
+      snake(*this, Position(_width-30, _height-20)),  // init snake positin in middle of play screen
       currentDirection(Direction::RIGHT),
       status(GAME_RUNNING),
       score(0)
 {
-	// add new cheery in game initiation
+	// add new cherry in game initiation
 	addCherry();
 }
 
@@ -57,18 +58,31 @@ void Game::snakeMoveTo(Position pos) {
 	//
 	//
 	// END CODE HERE
-	CellType bien=getCellType(pos);
-	if(bien==CELL_OFF_BOARD||bien==CELL_SNAKE)
+	getCellType(pos);
+	if(getCellType(pos)==CELL_OFF_BOARD||getCellType(pos)==CELL_SNAKE)
     {
         status=GAME_OVER;
         return;
     }
 
-    if(bien==CELL_CHERRY)
+    if(getCellType(pos)==CELL_CHERRY)
     {
         score=score+1;
         snake.eatCherry();
-        addCherry();
+        setCellType(pos,CELL_SNAKE);
+        do
+        {
+            srand(time(0));
+            Position posrandom=(rand()%width,rand()%height);
+            if(getCellType(posrandom)==CELL_EMPTY)
+            {
+                setCellType(posrandom,CELL_CHERRY);
+                getCherryPosition();
+                break;
+            }
+
+        }
+        while(true);
     }
     else
     {
@@ -180,20 +194,22 @@ void Game::nextStep()
 
 void Game::addCherry()
 {
+    srand(time(0));
     do {
 		// init a random position inside the play screen (width, height)
 		// Suggestion: use rand() function
 
-        Position randomPos;
-        randomPos=Position(rand()%width,rand()%height);// YOUR CODE HERE
+        int a=rand()%width;
+        int b=rand()%height;
+        // YOUR CODE HERE
 
 		// check if the randomPos is EMPTY
-        if (getCellType(randomPos) == CELL_EMPTY) {
+        if (squares[b][a] == CELL_EMPTY) {
 
         	// assign the cherry position as randomPos, and set randomPos type as CELL_CHERRY
         	//getCherryPosition(randomPos);
-        	setCellType(randomPos,CELL_CHERRY);
-
+        	squares[b][a]=CELL_CHERRY;
+        	getCherryPosition();
 
 			// YOUR CODE HERE
 			// YOUR CODE HERE
@@ -269,5 +285,4 @@ int Game::getHeight(){
 Snake Game::getSnake(){
 	return snake;
 }
-
 

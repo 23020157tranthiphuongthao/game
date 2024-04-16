@@ -1,3 +1,4 @@
+// DO NOT CHANGE THIS FILE
 
 #ifndef CONSTANTS_H
 #define CONSTANTS_H
@@ -21,6 +22,6 @@ const int CELL_SIZE = 30;
 const SDL_Color BOARD_COLOR = {0, 0, 0};
 const SDL_Color LINE_COLOR = {128, 128, 128};
 
-const double STEP_DELAY = 0.2;
+const double STEP_DELAY = 0.15;
 
 #endif

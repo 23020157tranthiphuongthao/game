@@ -33,4 +33,3 @@ public:
 };
 
 #endif // GALLERY_H
-

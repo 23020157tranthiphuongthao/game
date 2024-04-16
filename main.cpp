@@ -5,7 +5,6 @@
 #include <ctime>
 #include <cmath>
 #include <chrono>
-
 #include "SDL_utils.h"
 #include "Game.h"
 #include "Gallery.h"
@@ -23,7 +22,7 @@ Gallery* gallery = nullptr; // global picture manager
 int main(int argc, char* argv[])
 {
 
-    // srand(time(0));
+     srand(time(0));
     SDL_Window* window;
     SDL_Renderer* renderer;
     initSDL(window, renderer, SCREEN_WIDTH, SCREEN_HEIGHT, WINDOW_TITLE);
@@ -57,4 +56,3 @@ int main(int argc, char* argv[])
     quitSDL(window, renderer);
     return 0;
 }
-

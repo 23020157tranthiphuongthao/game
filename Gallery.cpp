@@ -1,3 +1,4 @@
+// DO NOT CHANGE THIS FILE
 
 #include "Gallery.h"
 #include "SDL_utils.h"
