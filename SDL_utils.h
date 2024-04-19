@@ -1,6 +1,3 @@
-// DO NOT CHANGE THIS FILE
-
-
 #ifndef SDL_UTILS__H
 #define SDL_UTILS__H
 

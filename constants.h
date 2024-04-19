@@ -1,5 +1,3 @@
-// DO NOT CHANGE THIS FILE
-
 #ifndef CONSTANTS_H
 #define CONSTANTS_H
 

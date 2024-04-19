@@ -1,5 +1,3 @@
-// DO NOT CHANGE THIS FILE
-
 #include <iostream>
 #include <cstdlib>
 #include <ctime>

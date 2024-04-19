@@ -1,5 +1,3 @@
-// DO NOT CHANGE THIS FILE
-
 #include <iostream>
 #if defined(_WIN64) || defined(_WIN32)
     #include <SDL.h>
@@ -84,16 +82,23 @@ void renderSplashScreen()
 void drawCell(SDL_Renderer* renderer, int left, int top, Position pos, SDL_Texture* texture)
 {
 	SDL_Rect cell;
-	cell.x = left + pos.x * CELL_SIZE + 5;
-	cell.y = top + pos.y * CELL_SIZE + 5;
-	cell.w = CELL_SIZE-10;
-	cell.h = CELL_SIZE-10;
+	cell.x = left + pos.x * CELL_SIZE ;
+	cell.y = top + pos.y * CELL_SIZE ;
+	cell.w = CELL_SIZE;
+	cell.h = CELL_SIZE;
 	SDL_RenderCopy(renderer, texture, NULL, &cell);
 }
 
 void drawCherry(SDL_Renderer* renderer, int left, int top, Position pos, Gallery* gallery)
 {
-    drawCell(renderer, left, top, pos, gallery->getImage(PIC_CHERRY));
+
+    SDL_Texture* texture=gallery->getImage(PIC_CHERRY);
+    SDL_Rect cherry;
+	cherry.x = left + pos.x * CELL_SIZE ;
+	cherry.y = top + pos.y * CELL_SIZE ;
+	cherry.w = CELL_SIZE;
+	cherry.h = CELL_SIZE;
+	SDL_RenderCopy(renderer, texture, NULL, &cherry);
 }
 
 void drawSnake(SDL_Renderer* renderer, int left, int top, vector<Position> pos, Gallery* gallery)
