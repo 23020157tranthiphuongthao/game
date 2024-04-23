@@ -14,7 +14,7 @@ const int SCREEN_HEIGHT = 600;
 const char WINDOW_TITLE[] = "Snake Game";
 
 const int BOARD_WIDTH = 30;
-const int BOARD_HEIGHT = 20;
+const int BOARD_HEIGHT = 19;
 const int CELL_SIZE = 30;
 
 const SDL_Color BOARD_COLOR = {0, 0, 0};

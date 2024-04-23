@@ -132,10 +132,12 @@ void renderGamePlay(SDL_Renderer* renderer, const Game& game, Gallery* gallery)
     SDL_SetRenderDrawColor(renderer, BOARD_COLOR.r, BOARD_COLOR.g, BOARD_COLOR.b, 0);
     SDL_RenderClear(renderer);
 
-    for (int x = 0; x <= BOARD_WIDTH; x++)
-        drawVerticalLine(renderer, left + x*CELL_SIZE, top, BOARD_HEIGHT);
-    for (int y = 0; y <= BOARD_HEIGHT; y++)
-        drawHorizontalLine(renderer, left, top+y * CELL_SIZE, BOARD_WIDTH);
+
+        drawVerticalLine(renderer, left + 0*CELL_SIZE, top, BOARD_HEIGHT);
+        drawVerticalLine(renderer, left + (BOARD_WIDTH)*CELL_SIZE, top, BOARD_HEIGHT);
+
+        drawHorizontalLine(renderer, left, top+ 0 * CELL_SIZE, BOARD_WIDTH);
+        drawHorizontalLine(renderer, left, top+(BOARD_HEIGHT) * CELL_SIZE, BOARD_WIDTH);
 
     drawCherry(renderer, left, top, game.getCherryPosition(), gallery);
     drawSnake(renderer, left, top, game.getSnakePositions(), gallery);

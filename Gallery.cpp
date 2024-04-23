@@ -42,4 +42,5 @@ void Gallery::loadGamePictures()
     pictures[PIC_SNAKE_VERTICAL] = loadTexture("snake_vertical.png");
     pictures[PIC_SNAKE_HORIZONTAL] = loadTexture("snake_horizontal.png");
     pictures[PIC_SNAKE_HEAD] = loadTexture("snake_head.png");
+    pictures[PIC_BACKGROUND]=loadTexture("background.png");
 }

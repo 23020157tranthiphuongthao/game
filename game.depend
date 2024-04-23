@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1713516567 source:d:\baitaplon\game\main.cpp
+1713886758 source:d:\baitaplon\game\main.cpp
 	<iostream>
 	<cstdlib>
 	<ctime>
@@ -10,19 +10,19 @@
 	"Gallery.h"
 	"constants.h"
 
-1713028297 source:d:\baitaplon\game\gallery.cpp
+1713883714 source:d:\baitaplon\game\gallery.cpp
 	"Gallery.h"
 	"SDL_utils.h"
 	<SDL_image.h>
 	<SDL2/SDL_image.h>
 
-1713028332 d:\baitaplon\game\gallery.h
+1713885186 d:\baitaplon\game\gallery.h
 	<vector>
 	<string>
 	<SDL.h>
 	<SDL2/SDL.h>
 
-1713027990 d:\baitaplon\game\sdl_utils.h
+1713879781 d:\baitaplon\game\sdl_utils.h
 	<iostream>
 	<SDL.h>
 	<SDL2/SDL.h>
@@ -30,23 +30,23 @@
 	"constants.h"
 	"Gallery.h"
 
-1713516554 d:\baitaplon\game\game.h
+1713879781 d:\baitaplon\game\game.h
 	"Snake.h"
 	"Position.h"
 
-1713028259 d:\baitaplon\game\snake.h
+1713879781 d:\baitaplon\game\snake.h
 	<queue>
 	<vector>
 	"Position.h"
 
-1713519078 d:\baitaplon\game\position.h
+1713879781 d:\baitaplon\game\position.h
 	<stdexcept>
 
-1713297146 d:\baitaplon\game\constants.h
+1713888394 d:\baitaplon\game\constants.h
 	<SDL.h>
 	<SDL2/SDL.h>
 
-1713518513 source:d:\baitaplon\game\game.cpp
+1713879781 source:d:\baitaplon\game\game.cpp
 	<vector>
 	<cassert>
 	<cstdlib>
@@ -54,7 +54,7 @@
 	"Game.h"
 	<ctime>
 
-1713512927 source:d:\baitaplon\game\sdl_utils.cpp
+1713887808 source:d:\baitaplon\game\sdl_utils.cpp
 	<iostream>
 	<SDL.h>
 	<SDL2/SDL.h>
@@ -62,7 +62,75 @@
 	"constants.h"
 	"Gallery.h"
 
-1713518787 source:d:\baitaplon\game\snake.cpp
+1713879781 source:d:\baitaplon\game\snake.cpp
+	"Snake.h"
+	"Game.h"
+	<iostream>
+
+1713883714 source:d:\game-main\gallery.cpp
+	"Gallery.h"
+	"SDL_utils.h"
+	<SDL_image.h>
+	<SDL2/SDL_image.h>
+
+1713885186 d:\game-main\gallery.h
+	<vector>
+	<string>
+	<SDL.h>
+	<SDL2/SDL.h>
+
+1713879781 d:\game-main\sdl_utils.h
+	<iostream>
+	<SDL.h>
+	<SDL2/SDL.h>
+	"Game.h"
+	"constants.h"
+	"Gallery.h"
+
+1713879781 d:\game-main\game.h
+	"Snake.h"
+	"Position.h"
+
+1713879781 d:\game-main\snake.h
+	<queue>
+	<vector>
+	"Position.h"
+
+1713879781 d:\game-main\position.h
+	<stdexcept>
+
+1713888394 d:\game-main\constants.h
+	<SDL.h>
+	<SDL2/SDL.h>
+
+1713879781 source:d:\game-main\game.cpp
+	<vector>
+	<cassert>
+	<cstdlib>
+	<iostream>
+	"Game.h"
+	<ctime>
+
+1713886758 source:d:\game-main\main.cpp
+	<iostream>
+	<cstdlib>
+	<ctime>
+	<cmath>
+	<chrono>
+	"SDL_utils.h"
+	"Game.h"
+	"Gallery.h"
+	"constants.h"
+
+1713887808 source:d:\game-main\sdl_utils.cpp
+	<iostream>
+	<SDL.h>
+	<SDL2/SDL.h>
+	"Game.h"
+	"constants.h"
+	"Gallery.h"
+
+1713879781 source:d:\game-main\snake.cpp
 	"Snake.h"
 	"Game.h"
 	<iostream>

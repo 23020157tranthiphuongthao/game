@@ -14,15 +14,16 @@
 
 enum PictureID {
     PIC_CHERRY = 0, PIC_SNAKE_VERTICAL,
-    PIC_SNAKE_HORIZONTAL, PIC_SNAKE_HEAD, PIC_COUNT
+    PIC_SNAKE_HORIZONTAL, PIC_SNAKE_HEAD, PIC_COUNT, PIC_BACKGROUND,
 };
 
 class Gallery
 {
     SDL_Texture* pictures[PIC_COUNT];
     SDL_Renderer* renderer;
-    SDL_Texture* loadTexture(std::string path);
+
 public:
+    SDL_Texture* loadTexture(std::string path);
     Gallery(SDL_Renderer* renderer_);
     ~Gallery();
 

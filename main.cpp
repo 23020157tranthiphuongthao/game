@@ -9,14 +9,14 @@
 
 #include "constants.h"
 
-using namespace std;
 
+
+using namespace std;
 
 #define CLOCK_NOW chrono::system_clock::now
 typedef chrono::duration<double> ElapsedTime;
 
 Gallery* gallery = nullptr; // global picture manager
-
 int main(int argc, char* argv[])
 {
 
@@ -27,9 +27,12 @@ int main(int argc, char* argv[])
     gallery = new Gallery(renderer);
     Game game(BOARD_WIDTH, BOARD_HEIGHT);
     SDL_Event e;
-
-    renderSplashScreen();
     auto start = CLOCK_NOW();
+    SDL_Texture* background =gallery-> loadTexture("background.png");
+    SDL_RenderCopy( renderer, background, NULL, NULL);
+
+    SDL_RenderPresent( renderer );
+    waitUntilKeyPressed();
     renderGamePlay(renderer, game, gallery);
 
 
@@ -48,6 +51,11 @@ int main(int argc, char* argv[])
         SDL_Delay(1);
     }
     renderGameOver(renderer, game);
+    SDL_Texture* gameover =gallery-> loadTexture("game_over.png");
+    SDL_RenderCopy( renderer, gameover, NULL, NULL);
+
+    SDL_RenderPresent( renderer );
+    waitUntilKeyPressed();
     updateRankingTable(game);
 
     delete gallery;
