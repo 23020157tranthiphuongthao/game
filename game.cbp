@@ -39,6 +39,8 @@
 		<Unit filename="Position.h" />
 		<Unit filename="SDL_utils.cpp" />
 		<Unit filename="SDL_utils.h" />
+		<Unit filename="Score.cpp" />
+		<Unit filename="Score.h" />
 		<Unit filename="Snake.cpp" />
 		<Unit filename="Snake.h" />
 		<Unit filename="constants.h" />

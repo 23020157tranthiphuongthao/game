@@ -19,6 +19,7 @@ Game::Game(int _width, int _height)
       status(GAME_RUNNING),
       score(0)
 {
+
 	// add new cherry in game initiation
 	addCherry();
 }
@@ -154,6 +155,22 @@ void Game::nextStep()
 
     snake.move(currentDirection);
 }
+void Game::setcellofboard()
+{
+    Position poss;
+    for(int a=0;a<40;a++)
+    {
+        for(int b=0;b<37;b++)
+          {
+              poss.x=a;
+              poss.y=b;
+              if(a==0||a==39||b==0||b==26)
+              {
+                  setCellType(poss,CELL_OFF_BOARD);
+              }
+          }
+    }
+}
 
 
 /***
@@ -166,9 +183,11 @@ void Game::nextStep()
  *
  ***/
 
+
 void Game::addCherry()
 {
     srand(time(0));
+
     do {
 		// init a random position inside the play screen (width, height)
 		// Suggestion: use rand() function
@@ -224,6 +243,26 @@ vector<Position> Game::getSnakePositions() const
 {
     return snake.getPositions();
 }
+vector<Position> Game::getBlockPositions()  const
+{
+    vector<Position>blocks;
+    Position posblock;
+    for(int ia=0;ia<40;ia++)
+    {
+        for(int ja=0;ja<27;ja++)
+        {
+            if(ia==0||ja==0||ia==39||ja==26)
+            {
+                posblock.x=ia;
+                posblock.y=ja;
+                blocks.push_back(posblock);
+            }
+
+        }
+    }
+    return blocks;
+}
+
 
 
 GameStatus Game::getGameStatus(){

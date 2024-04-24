@@ -43,6 +43,7 @@ public:
     void setGameStatus(GameStatus status);
 
     std::vector<Position> getSnakePositions() const;
+    std::vector<Position> getBlockPositions()  const;
     Position getCherryPosition() const { return cherryPosition; }
     Direction getCurrentDirection() const { return currentDirection; }
     int getScore() const { return score; }
@@ -60,7 +61,7 @@ public:
     void setCellType(Position pos, CellType cellType);
     Snake getSnake();
 	void addCherry();
-
+    void setcellofboard();
 };
 
 #endif // GAMEGROUND_H

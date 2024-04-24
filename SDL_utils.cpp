@@ -100,6 +100,13 @@ void drawCherry(SDL_Renderer* renderer, int left, int top, Position pos, Gallery
 	cherry.h = CELL_SIZE;
 	SDL_RenderCopy(renderer, texture, NULL, &cherry);
 }
+void drawBlock(SDL_Renderer* renderer, int left, int top, vector<Position> pos, Gallery* gallery)
+{
+    for (int is = 0; is <pos.size(); is++) {
+        SDL_Texture* texture = gallery->getImage(PIC_BLOCK);
+        drawCell(renderer, left, top, pos[is], texture);
+    }
+}
 
 void drawSnake(SDL_Renderer* renderer, int left, int top, vector<Position> pos, Gallery* gallery)
 {
@@ -114,7 +121,7 @@ void drawSnake(SDL_Renderer* renderer, int left, int top, vector<Position> pos, 
     }
 }
 
-void drawVerticalLine(SDL_Renderer* renderer, int left, int top, int cells)
+/**void drawVerticalLine(SDL_Renderer* renderer, int left, int top, int cells)
 {
     SDL_SetRenderDrawColor(renderer, LINE_COLOR.r, LINE_COLOR.g, LINE_COLOR.b, 0);
     SDL_RenderDrawLine(renderer, left, top, left, top + cells * CELL_SIZE);
@@ -124,20 +131,21 @@ void drawHorizontalLine(SDL_Renderer* renderer, int left, int top, int cells)
 {
     SDL_SetRenderDrawColor(renderer, LINE_COLOR.r, LINE_COLOR.g, LINE_COLOR.b, 0);
     SDL_RenderDrawLine(renderer, left, top, left + cells * CELL_SIZE, top);
-}
+}**/
 
 void renderGamePlay(SDL_Renderer* renderer, const Game& game, Gallery* gallery)
 {
     int top = 0, left = 0;
-    SDL_SetRenderDrawColor(renderer, BOARD_COLOR.r, BOARD_COLOR.g, BOARD_COLOR.b, 0);
-    SDL_RenderClear(renderer);
+    SDL_Texture* background =gallery-> loadTexture("backgroundplay.png");
+    SDL_RenderCopy( renderer, background, NULL, NULL);
+    drawBlock(renderer,left,top,game.getBlockPositions(),gallery);
 
 
-        drawVerticalLine(renderer, left + 0*CELL_SIZE, top, BOARD_HEIGHT);
+        /**drawVerticalLine(renderer, left + 0*CELL_SIZE, top, BOARD_HEIGHT);
         drawVerticalLine(renderer, left + (BOARD_WIDTH)*CELL_SIZE, top, BOARD_HEIGHT);
 
         drawHorizontalLine(renderer, left, top+ 0 * CELL_SIZE, BOARD_WIDTH);
-        drawHorizontalLine(renderer, left, top+(BOARD_HEIGHT) * CELL_SIZE, BOARD_WIDTH);
+        drawHorizontalLine(renderer, left, top+(BOARD_HEIGHT) * CELL_SIZE, BOARD_WIDTH);**/
 
     drawCherry(renderer, left, top, game.getCherryPosition(), gallery);
     drawSnake(renderer, left, top, game.getSnakePositions(), gallery);
