@@ -148,7 +148,7 @@ void renderGamePlay(SDL_Renderer* renderer, const Game& game, Gallery* gallery)
     drawBlock(renderer,left,top,game.getBlockPositions(),gallery);
     Score scr(BOARD_WIDTH);
     scr.render(renderer, 350 ,615);
-    scr.render_number(renderer, 480, 615, game.getScore());
+    scr.render_number(renderer, 480 , 615, game.getScore());
 
 
         /**drawVerticalLine(renderer, left + 0*CELL_SIZE, top, BOARD_HEIGHT);
