@@ -20,7 +20,6 @@ enum CellType {
 
 class Game
 {
-    std::vector< std::vector<CellType> > squares;
     Snake snake;
     GameStatus status;
     int score;
@@ -28,6 +27,7 @@ class Game
     Direction currentDirection;
     Position cherryPosition;
 public:
+    std::vector< std::vector<CellType> > squares;
 	const int width;
 	const int height;
 

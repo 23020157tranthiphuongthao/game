@@ -2,7 +2,7 @@
 #define SCORE_H
 #include "constants.h"
 #include<iostream>
-#define src_score "img/number/score.png"
+#define src_score "score.png"
 
 class Score
 {

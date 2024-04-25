@@ -20,6 +20,7 @@ Game::Game(int _width, int _height)
       score(0)
 {
 
+
 	// add new cherry in game initiation
 	addCherry();
 }
@@ -249,9 +250,9 @@ vector<Position> Game::getBlockPositions()  const
     Position posblock;
     for(int ia=0;ia<40;ia++)
     {
-        for(int ja=0;ja<27;ja++)
+        for(int ja=0;ja<=27;ja++)
         {
-            if(ia==0||ja==0||ia==39||ja==26)
+            if(ia==0||ia==39||ja==0||ja==27)
             {
                 posblock.x=ia;
                 posblock.y=ja;

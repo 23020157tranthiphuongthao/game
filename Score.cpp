@@ -53,70 +53,70 @@ void Score::render_number(SDL_Renderer* screen, int x, int y, int score){
 //    cout << score << '\n';
     for(int i = 0; i < number.size(); i ++){
         if(number[i] == '0'){
-            if(!LoadImage("img/number/0.png", screen)){
+            if(!LoadImage("0.png", screen)){
                 printf("Have error with image in number 0 %s\n", SDL_GetError());
             }
             SDL_Rect renderQuad = {x, y, sz, sz};
             SDL_RenderCopy(screen, Tex, NULL, &renderQuad);
         }
         else if(number[i] == '1'){
-            if(!LoadImage("img/number/1.png", screen)){
+            if(!LoadImage("1.png", screen)){
                 printf("Have error with image in number 1 %s\n", SDL_GetError());
             }
             SDL_Rect renderQuad = {x, y, sz, sz};
             SDL_RenderCopy(screen, Tex, NULL, &renderQuad);
         }
         else if(number[i] == '2'){
-            if(!LoadImage("img/number/2.png", screen)){
+            if(!LoadImage("2.png", screen)){
                 printf("Have error with image in number 2 %s\n", SDL_GetError());
             }
             SDL_Rect renderQuad = {x, y, sz, sz};
             SDL_RenderCopy(screen, Tex, NULL, &renderQuad);
         }
         else if(number[i] == '3'){
-            if(!LoadImage("img/number/3.png", screen)){
+            if(!LoadImage("3.png", screen)){
                 printf("Have error with image in number 3 %s\n", SDL_GetError());
             }
             SDL_Rect renderQuad = {x, y, sz, sz};
             SDL_RenderCopy(screen, Tex, NULL, &renderQuad);
         }
         else if(number[i] == '4'){
-            if(!LoadImage("img/number/4.png", screen)){
+            if(!LoadImage("4.png", screen)){
                 printf("Have error with image in number 4 %s\n", SDL_GetError());
             }
             SDL_Rect renderQuad = {x, y, sz, sz};
             SDL_RenderCopy(screen, Tex, NULL, &renderQuad);
         }
         else if(number[i] == '5'){
-            if(!LoadImage("img/number/5.png", screen)){
+            if(!LoadImage("5.png", screen)){
                 printf("Have error with image in number 5 %s\n", SDL_GetError());
             }
             SDL_Rect renderQuad = {x, y, sz, sz};
             SDL_RenderCopy(screen, Tex, NULL, &renderQuad);
         }
         else if(number[i] == '6'){
-            if(!LoadImage("img/number/6.png", screen)){
+            if(!LoadImage("6.png", screen)){
                 printf("Have error with image in number 6 %s\n", SDL_GetError());
             }
             SDL_Rect renderQuad = {x, y, sz, sz};
             SDL_RenderCopy(screen, Tex, NULL, &renderQuad);
         }
         else if(number[i] == '7'){
-            if(!LoadImage("img/number/7.png", screen)){
+            if(!LoadImage("7.png", screen)){
                 printf("Have error with image in number 7 %s\n", SDL_GetError());
             }
             SDL_Rect renderQuad = {x, y, sz, sz};
             SDL_RenderCopy(screen, Tex, NULL, &renderQuad);
         }
         else if(number[i] == '8'){
-            if(!LoadImage("img/number/8.png", screen)){
+            if(!LoadImage("8.png", screen)){
                 printf("Have error with image in number 8 %s\n", SDL_GetError());
             }
             SDL_Rect renderQuad = {x, y, sz, sz};
             SDL_RenderCopy(screen, Tex, NULL, &renderQuad);
         }
         else if(number[i] == '9'){
-            if(!LoadImage("img/number/9.png", screen)){
+            if(!LoadImage("9.png", screen)){
                 printf("Have error with image in number 9 %s\n", SDL_GetError());
             }
             SDL_Rect renderQuad = {x, y, sz, sz};

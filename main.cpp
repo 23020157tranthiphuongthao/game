@@ -57,7 +57,6 @@ int main(int argc, char* argv[])
     SDL_RenderPresent( renderer );
     waitUntilKeyPressed();
     updateRankingTable(game);
-
     delete gallery;
     quitSDL(window, renderer);
     return 0;

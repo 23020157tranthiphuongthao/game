@@ -9,6 +9,7 @@
 #include "Game.h"
 #include "constants.h"
 #include "Gallery.h"
+#include "Score.h"
 
 
 
@@ -105,6 +106,8 @@ void drawBlock(SDL_Renderer* renderer, int left, int top, vector<Position> pos, 
     for (int is = 0; is <pos.size(); is++) {
         SDL_Texture* texture = gallery->getImage(PIC_BLOCK);
         drawCell(renderer, left, top, pos[is], texture);
+        /**Game*game;
+        game->squares[pos[is].y][pos[is].x]=CELL_OFF_BOARD;**/
     }
 }
 
@@ -118,6 +121,7 @@ void drawSnake(SDL_Renderer* renderer, int left, int top, vector<Position> pos, 
         SDL_Texture* texture = gallery->getImage(
 			pos[i].y == pos[i+1].y ? PIC_SNAKE_HORIZONTAL : PIC_SNAKE_VERTICAL);
         drawCell(renderer, left, top, pos[i], texture);
+
     }
 }
 
@@ -136,9 +140,15 @@ void drawHorizontalLine(SDL_Renderer* renderer, int left, int top, int cells)
 void renderGamePlay(SDL_Renderer* renderer, const Game& game, Gallery* gallery)
 {
     int top = 0, left = 0;
+    /**Score scr(BOARD_WIDTH);
+    scr.render(renderer, 0, 0);
+    scr.render_number(renderer, BOARD_WIDTH * 3, 0, game.getScore());**/
     SDL_Texture* background =gallery-> loadTexture("backgroundplay.png");
     SDL_RenderCopy( renderer, background, NULL, NULL);
     drawBlock(renderer,left,top,game.getBlockPositions(),gallery);
+    Score scr(BOARD_WIDTH);
+    scr.render(renderer, 350 ,615);
+    scr.render_number(renderer, 480, 615, game.getScore());
 
 
         /**drawVerticalLine(renderer, left + 0*CELL_SIZE, top, BOARD_HEIGHT);

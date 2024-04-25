@@ -15,6 +15,7 @@
 #include "Game.h"
 #include "constants.h"
 #include "Gallery.h"
+#include "Score.h"
 
 void logSDLError(std::ostream& os,
                  const std::string &msg, bool fatal = false);
