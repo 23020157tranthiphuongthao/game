@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1714118203 source:d:\baitaplon\game\main.cpp
+1714125262 source:d:\baitaplon\game\main.cpp
 	<iostream>
 	<cstdlib>
 	<ctime>
@@ -10,19 +10,19 @@
 	"Gallery.h"
 	"constants.h"
 
-1713980558 source:d:\baitaplon\game\gallery.cpp
+1714125261 source:d:\baitaplon\game\gallery.cpp
 	"Gallery.h"
 	"SDL_utils.h"
 	<SDL_image.h>
 	<SDL2/SDL_image.h>
 
-1713980321 d:\baitaplon\game\gallery.h
+1714125261 d:\baitaplon\game\gallery.h
 	<vector>
 	<string>
 	<SDL.h>
 	<SDL2/SDL.h>
 
-1714057557 d:\baitaplon\game\sdl_utils.h
+1714125262 d:\baitaplon\game\sdl_utils.h
 	<iostream>
 	<SDL.h>
 	<SDL2/SDL.h>
@@ -31,23 +31,23 @@
 	"Gallery.h"
 	"Score.h"
 
-1714058501 d:\baitaplon\game\game.h
+1714125262 d:\baitaplon\game\game.h
 	"Snake.h"
 	"Position.h"
 
-1713879781 d:\baitaplon\game\snake.h
+1714125262 d:\baitaplon\game\snake.h
 	<queue>
 	<vector>
 	"Position.h"
 
-1713879781 d:\baitaplon\game\position.h
+1714125262 d:\baitaplon\game\position.h
 	<stdexcept>
 
-1713990687 d:\baitaplon\game\constants.h
+1714125262 d:\baitaplon\game\constants.h
 	<SDL.h>
 	<SDL2/SDL.h>
 
-1714118126 source:d:\baitaplon\game\game.cpp
+1714125262 source:d:\baitaplon\game\game.cpp
 	<vector>
 	<cassert>
 	<cstdlib>
@@ -55,7 +55,7 @@
 	"Game.h"
 	<ctime>
 
-1714118397 source:d:\baitaplon\game\sdl_utils.cpp
+1714125262 source:d:\baitaplon\game\sdl_utils.cpp
 	<iostream>
 	<SDL.h>
 	<SDL2/SDL.h>
@@ -64,7 +64,7 @@
 	"Gallery.h"
 	"Score.h"
 
-1713879781 source:d:\baitaplon\game\snake.cpp
+1714125262 source:d:\baitaplon\game\snake.cpp
 	"Snake.h"
 	"Game.h"
 	<iostream>
@@ -137,14 +137,14 @@
 	"Game.h"
 	<iostream>
 
-1714059410 source:d:\baitaplon\game\score.cpp
+1714125262 source:d:\baitaplon\game\score.cpp
 	"Score.h"
 	"Gallery.h"
 	"SDL_utils.h"
 	<SDL_image.h>
 	<SDL2/SDL_image.h>
 
-1714059410 d:\baitaplon\game\score.h
+1714125262 d:\baitaplon\game\score.h
 	"constants.h"
 	<iostream>
 
