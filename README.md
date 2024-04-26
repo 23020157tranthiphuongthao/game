@@ -26,9 +26,9 @@ BÀI TẬP LỚN LTNC SINH VIÊN 23020157 TRẦN THỊ PHƯƠNG THẢO K68CB
 | RIGHT   |     →    | 
 
 ## **Setup** 
-    1. Truy cập link: https://drive.google.com/drive/folders/1InlR7h6X6jXwh8hn9WRP46u3VDHvrZN6?usp=sharing để tải file zip về máy
+    - Truy cập link: https://drive.google.com/drive/folders/1InlR7h6X6jXwh8hn9WRP46u3VDHvrZN6?usp=sharing để tải file zip về máy
 
-    2. Giải nén file vừa tải,  ấn đúp vào file game.exe để chơi game
+    - Giải nén file vừa tải,  ấn đúp vào file game.exe để chơi game
 
 ## **See also**  
 
