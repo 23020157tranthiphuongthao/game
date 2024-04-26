@@ -55,7 +55,7 @@
 	"Game.h"
 	<ctime>
 
-1714118309 source:d:\baitaplon\game\sdl_utils.cpp
+1714118397 source:d:\baitaplon\game\sdl_utils.cpp
 	<iostream>
 	<SDL.h>
 	<SDL2/SDL.h>
