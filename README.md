@@ -42,6 +42,6 @@ BÀI TẬP LỚN LTNC SINH VIÊN 23020157 TRẦN THỊ PHƯƠNG THẢO K68CB
 - thao tác chuột và bàn phím, hình ảnh. 
 
 ### *Nguồn tham khảo* 
--https://github.com/csuet/AdvProg_AY2324, https://github.com/trongminh03/Snake-Game/tree/main?tab=readme-ov-file, https://github.com/huyen2k/maze---gameSDL
--https://courses.uet.vnu.edu.vn/mod/resource/view.php?id=157317
--https://www.youtube.com/@PhatTrienPhanMem123AZ,https://www.youtube.com/@tranthiminhchau9465
+- https://github.com/csuet/AdvProg_AY2324, https://github.com/trongminh03/Snake-Game/tree/main?tab=readme-ov-file, https://github.com/huyen2k/maze---gameSDL
+- https://courses.uet.vnu.edu.vn/mod/resource/view.php?id=157317
+- https://www.youtube.com/@PhatTrienPhanMem123AZ,https://www.youtube.com/@tranthiminhchau9465
