@@ -20,7 +20,7 @@ Game::Game(int _width, int _height)
       score(0)
 {
 
-
+    setcellofboard();
 	// add new cherry in game initiation
 	addCherry();
 }
@@ -63,20 +63,7 @@ void Game::snakeMoveTo(Position pos)
         score=score+1;
         snake.eatCherry();
         setCellType(pos,CELL_SNAKE);
-        do
-        {
-            srand(time(0));
-            Position posrandom=(rand()%width,rand()%height);
-            if(getCellType(posrandom)==CELL_EMPTY)
-            {
-                cherryPosition=posrandom;
-                setCellType(posrandom,CELL_CHERRY);
-                getCherryPosition();
-                break;
-            }
-
-        }
-        while(true);
+        addCherry();
     }
     else
     {
@@ -165,7 +152,7 @@ void Game::setcellofboard()
           {
               poss.x=a;
               poss.y=b;
-              if(a==0||a==39||b==0||b==26)
+              if(a==0||a==39||b==0)
               {
                   setCellType(poss,CELL_OFF_BOARD);
               }
@@ -192,7 +179,8 @@ void Game::addCherry()
     do {
 		// init a random position inside the play screen (width, height)
 		// Suggestion: use rand() function
-        Position randompos(rand()%width,rand()%height);
+        Position randompos((rand()%(width-1))+1,(rand()%(height-1))+1);
+                           ;
 		// check if the randomPos is EMPTY
         if (getCellType(randompos) == CELL_EMPTY) {
 

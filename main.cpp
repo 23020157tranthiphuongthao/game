@@ -50,13 +50,13 @@ int main(int argc, char* argv[])
         }
         SDL_Delay(1);
     }
-    renderGameOver(renderer, game);
     SDL_Texture* gameover =gallery-> loadTexture("game_over.png");
     SDL_RenderCopy( renderer, gameover, NULL, NULL);
 
     SDL_RenderPresent( renderer );
     waitUntilKeyPressed();
-    updateRankingTable(game);
+    renderGameOver(renderer, game);
+    //updateRankingTable(game);
     delete gallery;
     quitSDL(window, renderer);
     return 0;

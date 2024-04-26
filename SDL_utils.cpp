@@ -180,7 +180,7 @@ void interpretEvent(SDL_Event e, Game& game)
     }
 }
 
-void updateRankingTable(const Game& game)
+/**void updateRankingTable(const Game& game)
 {
 
-}
+}**/

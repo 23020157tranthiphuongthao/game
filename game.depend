@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1714046895 source:d:\baitaplon\game\main.cpp
+1714118203 source:d:\baitaplon\game\main.cpp
 	<iostream>
 	<cstdlib>
 	<ctime>
@@ -47,7 +47,7 @@
 	<SDL.h>
 	<SDL2/SDL.h>
 
-1713990687 source:d:\baitaplon\game\game.cpp
+1714118126 source:d:\baitaplon\game\game.cpp
 	<vector>
 	<cassert>
 	<cstdlib>
@@ -55,7 +55,7 @@
 	"Game.h"
 	<ctime>
 
-1714060749 source:d:\baitaplon\game\sdl_utils.cpp
+1714118309 source:d:\baitaplon\game\sdl_utils.cpp
 	<iostream>
 	<SDL.h>
 	<SDL2/SDL.h>
